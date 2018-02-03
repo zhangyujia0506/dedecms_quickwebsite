@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<div class="box_right">
+<div class="name">
+{dede:type}
+<img src="/templets/moban/images/right[field:id/].jpg" style="padding-bottom:10px;" alt="迅美网站建设" /></div>
+{/dede:type}
+<div class="nav_lf">
+<ul>
+{dede:channel  row='4' type ='son' currentstyle="<li class='center'><a href='~typelink~' class='thisclass'>~typename~</a> </li>"}
+<li><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:channel}
+</ul>
+</div>
+<div class="box_right_news">
+<h2>建站流程</h2>
+<ul>
+<img src="{dede:global.cfg_templets_skin/}/images/liuc.jpg" alt="深圳网站建设流程" />
+</ul>
+<div class="news_db"></div>
+</div>
+<div class="box_right_news">
+<h2>热门新闻</h2>
+<ul>
+{dede:arclist       row='6'       titlelen='30'     typeid='11'      orderby ='click'    }
+<li><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+<div class="news_db"></div>
+</div>
+</div>

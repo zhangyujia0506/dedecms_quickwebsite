@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<div class="header">
+<div class="header_t">
+<div class="logo"><a href="{dede:global.cfg_basehost/}"><img src="{dede:global.cfg_templets_skin/}/images/logo.jpg" align="深圳网站建设" border="0" /></a></div>
+<div class="top_right">
+<p><a href="{dede:global.cfg_basehost/}">返回首页</a> | <a href="#">网站案例</a> | <a href="#">帮助中心</a></p>
+{dede:global.cfg_tbtxt/}
+</div>
+</div>
+<div class="nav">
+<ul>
+
+<li><a href="{dede:global.cfg_basehost/}" title="网站首页">网站首页</a></li>
+{dede:channel   row='7'    type ='top'            currentstyle="<li class='center'><a href='~typelink~' class='thisclass'>~typename~</a> </li>"           }
+<li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+{/dede:channel}
+
+</ul>
+</div>
+</div>
+<div class="banner">
+{dede:type}
+<img src="/templets/moban/images/banner[field:id/].jpg" width="980" height="175" alt="[field:typelink/]" />
+{/dede:type}
+</div>

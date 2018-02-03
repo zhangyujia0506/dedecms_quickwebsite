@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<div class="footer">
+<div class="link">
+友情链接：
+{dede:flink titlelen='20' row='32' type='text'}
+[field:link /]
+{/dede:flink}
+</div>
+<div class="footer_text">
+<p>
+{dede:channel     row='4'            type ='son'       typeid='11'    }
+<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>  | 
+{/dede:channel}
+<a href="{dede:global.cfg_basehost/}/sitemap.html" title="网站地图sitemap">网站地图</a>
+</p>
+<p>{dede:global.cfg_yw/} {dede:global.cfg_beian/}</p>
+<p>{dede:global.cfg_powerby/} {dede:global.cfg_tj/}</p>
+</div>
+</div> 
+<script type="text/javascript">
+document.write("<div id=QQFloat style=Z-INDEX:20;LEFT:88%;VISIBILITY:visible;WIDTH:112px;POSITION:absolute;TOP:400px;HEIGHT:300px;>")
+document.write("<div class=qq><div class=qq_t><img src={dede:global.cfg_templets_skin/}/images/qq01.png /></div><div class=qq_bg><ul>")
+document.write("<li><img SRC=http://www.djjwz.com/images/qq.gif  border=0 align=absmiddle /><a target=_blank href='http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_q/}&site=qq&menu=yes'><font color='#000000'>客服1号</font></a></li>")
+document.write("<li><img SRC=http://www.djjwz.com/images/qq.gif  border=0 align=absmiddle /><a target=_blank href='http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes'><font color='#000000'>客服2号</font></a></li>")
+document.write("<li><img SRC=http://www.djjwz.com/images/qq.gif  border=0 align=absmiddle /><a target=_blank href='http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qqq/}&site=qq&menu=yes'><font color='#000000'>客服3号</font></a>")
+document.write("</ul></div><div class=qq_d><img src={dede:global.cfg_templets_skin/}/images/qq02.png /></div></div>")
+document.write("</div>")
+var tips; var theTop = 200
+var old = theTop;
+function initFloatTips() {
+  tips = document.getElementById('QQFloat');
+  moveTips();
+};
+function moveTips() {
+  var tt=50;
+  if (window.innerHeight) {
+    pos = window.pageYOffset
+  }
+  else if (document.documentElement && document.documentElement.scrollTop) {
+    pos = document.documentElement.scrollTop
+  }
+  else if (document.body) {
+    pos = document.body.scrollTop;
+  }
+
+  pos=pos-tips.offsetTop+theTop;
+  pos=tips.offsetTop+pos/10;
+	
+  if (pos < theTop) pos = theTop;
+  if (pos != old) {
+    tips.style.top = pos+"px";
+    tt=10;
+  }	
+  old = pos;
+  setTimeout(moveTips,tt);
+}
+initFloatTips();
+</script>
+</body>
+</html>

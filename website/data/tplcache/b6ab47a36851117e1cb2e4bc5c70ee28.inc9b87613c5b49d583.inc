@@ -1,0 +1,7 @@
+<?php
+$z[0]=Array("pubdate","",7,54);
+$z[0][4]['function']="MyDate('Y-m-d',@me)";
+$z[1]=Array("arcurl","",67,82);
+$z[2]=Array("title","",84,98);
+
+?>

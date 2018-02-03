@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script src="{dede:global.cfg_templets_skin/}/style/jquery.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/04.js" type="text/javascript"></script>
+<div class="header">
+<div class="header_t">
+<div class="logo"><a href="{dede:global.cfg_basehost/}"><img src="{dede:global.cfg_templets_skin/}/images/logo.jpg" align="深圳网站建设" border="0" /></a></div>
+<div class="top_right">
+<p><a href="{dede:global.cfg_basehost/}">返回首页</a> | <a href="#">网站案例</a> | <a href="#">帮助中心</a></p>
+{dede:global.cfg_tbtxt/}
+</div>
+</div>
+<div class="nav">
+<ul>
+<li class="center"><a href="{dede:global.cfg_basehost/}" title="网站首页">网站首页</a></li>
+{dede:channel   row='7'    type ='top'                     }
+<li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+{/dede:channel}
+</ul>
+</div>
+</div>
+<div class="fla_pic">
+<div id="MainPromotionBanner">
+<div id="SlidePlayer">
+<ul class="Slides">
+<li><img src="{dede:global.cfg_templets_skin/}/images/01.jpg" alt="深圳网站建设" /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="gonggao">
+{dede:global.cfg_gg/}
+</div>
+
+<div class="anli">
+<div class="anli_title">
+<img style="float:left;" src="{dede:global.cfg_templets_skin/}/images/net2_06.jpg" alt="深圳网站建设案例" /><img style="float:right;" src="{dede:global.cfg_templets_skin/}/images/net2_09.jpg" alt="深圳网站制作案例" />
+<p>
+{dede:channel        row='3'        type ='son'      typeid ='5'      }
+<a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a>
+{/dede:channel}
+</p>
+<b><a href="{dede:global.cfg_basehost/}/a/chenggonganli/" title="更多">更多>></a></b>
+</div>
+<div class="infiniteCarousel">
+      <div class="wrapper">
+        <ul>
+{dede:arclist    row='8'      orderby ='pubdate'   typeid='5'              }
+<li><a href="[field:arcurl/]" target="_blank" title="[field:fulltitle/]"><img src="[field:picname/]"/></a><br/>[field:title/]</li> 
+{/dede:arclist} 
+        </ul>        
+      </div>
+    </div>
+<div class="anli_fot"></div>
+</div>
+<div class="liucheng">
+<div class="liucheng_l"><img src="{dede:global.cfg_templets_skin/}/images/net2_10.jpg" alt="网站建设流程" /></div>
+<div class="liucheng_c"><img src="{dede:global.cfg_templets_skin/}/images/net2_17.jpg" alt="网站制作流程" /></div>
+<div class="liucheng_r"><img src="{dede:global.cfg_templets_skin/}/images/net2_14.jpg" alt="网站设计流程" /></div>
+</div>
+
+<div class="main_news">
+{dede:channelartlist row='3' typeid='12,13,14' }
+<div class="news_01">
+<div class="news_title">
+<h2>{dede:field name='typename'/}</h2><b><a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">更多>></a></b>
+</div>
+<ul>
+{dede:arclist    row='10'    orderby ='pubdate'     titlelen='30'                }
+<li><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+<div class="news_bot"></div>
+</div>
+{/dede:channelartlist}
+<div class="news_01" id="news_011">
+<div class="news_title">
+<h2>网站优化</h2><b><a href="{dede:global.cfg_basehost/}/a/xinwenzhongxin/wangzhanyouhua/" title="网站优化">更多>></a></b>
+</div>
+<ul>
+{dede:arclist    row='10'    orderby ='pubdate'     titlelen='30'      typeid='15'            }
+<li><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+<div class="news_bot"></div>
+</div>
+{dede:include filename="footer.htm"/}
